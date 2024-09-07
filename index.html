@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Aerial Skills Generator</title>
@@ -10,27 +21,24 @@
   <body>
     <div class="container">
       <header>
-        <!-- add title -->
         <h1>AI Aerial Skills Generator</h1>
       </header>
       <main>
-        <!-- add input selections to refine skills generator, if possible appartus and skill level -->
         <form id="skill-generator-form">
           <input
             type="text"
             placeholder="Enter skill lever and appartus..."
-            id=""
+            id="user-instructions"
+            class="input-prompt"
             autofocus
             required
             autocomplete="off"
-            class="input-prompt"
           />
           <input type="submit" name="" id="" class="submit-button" />
         </form>
         <div class="skill" id="skill"></div>
       </main>
       <footer>
-        <!-- link to GitHub profile, GitHub repositories and Netlify -->
         This AI Generator was coded by
         <a href="https://github.com/Anneth6" target="_blank">Ann Russell</a> and
         is open sourced on
