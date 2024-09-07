@@ -1,6 +1,4 @@
 body {
-  /* modify colours to CircusFit purple and Green
-  Accent with Black? */
   background-color: black;
   color: #00ac8c;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -80,6 +78,13 @@ form {
   line-height: 1.5;
 }
 
+section.imageContainer {
+  padding: 5px;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
 .hidden {
   display: none;
 }
@@ -122,4 +127,27 @@ a:hover {
 footer {
   margin-top: 30px;
   font-size: smaller;
+  text-align: center;
 }
+
+/* generating spinner for image -- not included in project  */
+/* @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+section.imageContainer.loading::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border: 4px solid #9e3d98;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+} */

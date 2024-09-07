@@ -1,6 +1,4 @@
 function displaySkill(response) {
-  console.log("Skill generated, give it a go 😊.");
-
   new Typewriter("#skill", {
     strings: response.data.answer,
     autoStart: true,
@@ -22,10 +20,6 @@ function generateSkill(event) {
   let skillElement = document.querySelector("#skill");
   skillElement.innerHTML = `<div class="generating">Generating ${instructionInput.value} skill.</div>`;
   skillElement.classList.remove("hidden");
-
-  console.log("Working on generating your skill");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 
   axios.get(apiUrl).then(displaySkill);
 }
