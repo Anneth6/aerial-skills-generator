@@ -7,39 +7,46 @@
     <title>Aerial Skills Generator</title>
   </head>
   <body>
-    <header>
-      <!-- add title -->
-      <h1>AI Aerial Skills Generator</h1>
-    </header>
-    <main>
-      <!-- add input selections to refine skills generator, if possible appartus and skill level -->
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the appartus you would like the skill for"
-          id=""
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" name="" id="" />
-      </form>
-      <div>The appartus skill to fill in here</div>
-    </main>
-    <footer>
-      <!-- link to GitHub profile, GitHub repositories and Netlify -->
-      This AI Generator was coded by
-      <a href="https://github.com/Anneth6" target="_blank">Ann Russell</a> and
-      is open sourced on
-      <a
-        href="https://github.com/Anneth6/aerial-skills-generator"
-        target="_blank"
-      >
-        GitHub</a
-      >
-      an is hosted on
-      <a href="https://aerial-skills.netlify.app/" target="_blank">Netlify</a>
-    </footer>
+    <div class="container">
+      <header>
+        <!-- add title -->
+        <h1>AI Aerial Skills Generator</h1>
+      </header>
+      <main>
+        <!-- add input selections to refine skills generator, if possible appartus and skill level -->
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the appartus you would like the skill for"
+            id=""
+            autofocus
+            required
+            autocomplete="off"
+            class="input-prompt"
+          />
+          <input type="submit" name="" id="" class="submit-button" />
+        </form>
+        <div class="skill">
+          The appartus skill to fill in here
+          <br />
+          skill level if possible
+        </div>
+      </main>
+      <footer>
+        <!-- link to GitHub profile, GitHub repositories and Netlify -->
+        This AI Generator was coded by
+        <a href="https://github.com/Anneth6" target="_blank">Ann Russell</a> and
+        is open sourced on
+        <a
+          href="https://github.com/Anneth6/aerial-skills-generator"
+          target="_blank"
+        >
+          GitHub</a
+        >
+        an is hosted on
+        <a href="https://aerial-skills.netlify.app/" target="_blank">Netlify</a>
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
