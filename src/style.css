@@ -2,7 +2,7 @@ body {
   /* modify colours to CircusFit purple and Green
   Accent with Black? */
   background-color: black;
-  color: #49e0ad;
+  color: #00ac8c;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .container {
@@ -22,13 +22,13 @@ h1 {
   font-weight: 800;
   font-size: 40px;
   line-height: 1.5;
-  color: #c731c2;
+  color: #00ac8c;
 }
 
 form {
   display: flex;
   padding: 20px;
-  background-color: #49e0ae70;
+  background-color: rgb(0, 172, 140, 0.35);
   border-radius: 15px;
   box-shadow: 0px 20px 60px rgb(199, 49, 194, 0.35);
   margin-bottom: 30px;
@@ -36,7 +36,7 @@ form {
 
 .input-prompt {
   background-color: black;
-  color: #c731c2;
+  color: #9e3d98;
   border-radius: 10px;
   border: none;
   padding: 15px;
@@ -50,7 +50,7 @@ form {
   margin-left: 10px;
   border: none;
   background-color: black;
-  color: #c731c2;
+  color: #9e3d98;
   border-radius: 10px;
   padding: 15px 20px;
   font-size: 16px;
@@ -66,7 +66,14 @@ form {
 }
 
 a {
-  color: #c731c2;
+  color: #9e3d98;
+}
+
+a:hover {
+  color: white;
+  font-weight: 500;
+  font-size: small;
+  text-decoration: none;
 }
 
 footer {
