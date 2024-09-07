@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Aerial Skills Generator</title>
   </head>
@@ -14,7 +15,7 @@
       </header>
       <main>
         <!-- add input selections to refine skills generator, if possible appartus and skill level -->
-        <form>
+        <form id="skill-generator-form">
           <input
             type="text"
             placeholder="Enter skill lever and appartus..."
@@ -26,11 +27,7 @@
           />
           <input type="submit" name="" id="" class="submit-button" />
         </form>
-        <div class="skill">
-          The appartus skill to fill in here
-          <br />
-          skill level if possible
-        </div>
+        <div class="skill" id="skill"></div>
       </main>
       <footer>
         <!-- link to GitHub profile, GitHub repositories and Netlify -->
