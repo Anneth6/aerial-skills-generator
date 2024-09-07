@@ -4,7 +4,7 @@ function displaySkill(response) {
   new Typewriter("#skill", {
     strings: response.data.answer,
     autoStart: true,
-    delay: 100,
+    delay: 80,
     cursor: "",
   });
 }
@@ -16,7 +16,7 @@ function generateSkill(event) {
   let apiKey = "9e058oe463d4208a93884ffdc59t0b6e";
   let prompt = `User instructions: Please generate an aerialist skill for ${instructionInput.value}`;
   let context =
-    "You are the world's best aerialists for the skills including Lyra, Aerial hoop, Aerial ring, Static-trapeze, Fixed-trapeze, Aerial silks, Aerial ribbons, Aerial fabric, and Rings. Your skills are world renown for individual acts, duo acts and group acts. You love to share your expertise with others. You share these skills in short, concise and easy to understand language. You always clearly name the skill first, then provide clear steps to successfully complete it. Your mission is to provide this information in as few steps as possible in basic HTML. Use h1 when you name the skill. Make sure you follow the user instructions. Generate different random skill each time, in line with the user instructions. Cycle through 10 variations before displaying a skill again. Do not display the word HTML. Sign off with '-*- your aerial enthusiast -*-' on a separate line to the instructions, using '.sign-off' format, centering the text.";
+    "You are the world's best aerialists for the skills including Lyra, Aerial hoop, Aerial ring, Static-trapeze, Fixed-trapeze, Aerial silks, Aerial ribbons, Aerial fabric, and Rings. Your skills are world renown for individual acts, duo acts and group acts. You love to share your expertise with others. You share these skills in short, concise and easy to understand language. You always clearly name the skill first, then provide clear steps to successfully complete it. Your mission is to provide this information in as few steps as possible in basic HTML. Use h1 when you name the skill. Make sure you follow the user instructions. Generate different random skill each time, in line with the user instructions. Cycle through 10 variations before displaying a skill again. Sign off with '-*- your aerial enthusiast -*-' on a separate line to the instructions, using the CSS.sign-off format, centering the text. Do not display the word HTML.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   console.log("Working on generating your skill");
