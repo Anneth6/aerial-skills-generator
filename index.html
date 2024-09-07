@@ -28,19 +28,24 @@
         <h1>AI Aerial Skills Generator</h1>
       </header>
       <main>
-        <form id="skill-generator-form">
-          <input
-            type="text"
-            placeholder="Enter skill lever and appartus..."
-            id="user-instructions"
-            class="input-prompt"
-            autofocus
-            required
-            autocomplete="off"
-          />
-          <input type="submit" name="" id="" class="submit-button" />
-        </form>
-        <div class="skill" id="skill"></div>
+        <div class="form-container">
+          <form id="skill-generator-form">
+            <input
+              type="text"
+              placeholder="Enter skill level and appartus to generate skill..."
+              id="user-instructions"
+              class="input-prompt"
+              autofocus
+              required
+              autocomplete="off"
+            />
+            <input type="submit" name="" id="" class="submit-button" />
+          </form>
+          <div class="hint">
+            <em>For example:</em> basic trapeze or duo intermediate lyra
+          </div>
+        </div>
+        <div class="skill hidden" id="skill"></div>
         <!-- <div class="skill-picture" id="skill-picture">
           <img src="" alt="visual skill display" width="500" height="600" />
         </div> -->
